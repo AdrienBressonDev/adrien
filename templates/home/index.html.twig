@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Recherche{% endblock jj
+
+{% block titreH1 %}Résultats de la recherche de : <code>{{mot}}  {% endblock %}}
+
+{% block body %}
+    <h1>Résultats de la recherche de : </h1>
+        
+    <div class="card-columns">
+        {% for jeu in jeux %}
+        {{ include("game/_card.html.twig") }}
+        {% endfor%}
+        </div>
+
+    <hr>
+    <p>Il y a <strong>{{ nb_joueurs }}</strong> joueurs inscrits dans {% endblock %}
+
+    {% block piedpage %} footer de la page d'accueil {% endblock %}
+           
+
+
